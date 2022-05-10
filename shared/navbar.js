@@ -1,7 +1,6 @@
 const setInnerHtml = (id, htmlString) =>
   (document.getElementById(id).innerHTML = htmlString);
 
-
 const displayNavBar = () => {
   let domString = "";
   domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
