@@ -1,6 +1,6 @@
 import { renderToDom } from "./renderToDom";
 
-const packages = [
+const packageList = [
     {
         id: 1,
         title: "Docker",
@@ -10,9 +10,9 @@ const packages = [
 
 
 
-const packageCards = () => {
+export const packageCards = () => {
     const domString = '';
-    for (pack of packages) {
+    for (pack of packageList) {
         domString += `<div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
