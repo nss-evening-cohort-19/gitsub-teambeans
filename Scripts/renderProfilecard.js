@@ -1,6 +1,6 @@
 import renderToDom from "./renderToDom.js"
 
-renderProfile = () => {
+const renderProfile = () => {
   let domString = `
   <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="..." alt="Card image cap">
@@ -25,6 +25,6 @@ renderProfile = () => {
 <p>Sponsors</p>
   </div>
 </div>`;
-renderToDom ('profileContainer', domString);
+renderToDom ("#profileContainer", domString);
 };
-export default renderProfile();
+export default renderProfile;
