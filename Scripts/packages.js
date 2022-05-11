@@ -1,4 +1,5 @@
 import renderToDom from "./renderToDom";
+import { displayNavBar } from "./navbar";
 
 export const packageList = [
     {
@@ -27,7 +28,8 @@ export const packageCards = () => {
 }
 
 const startApp = () => {
-    packageCards(packageList)
+    displayNavBar();
+    packageCards(packageList);
   };
   
   startApp();
