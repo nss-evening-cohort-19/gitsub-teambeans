@@ -1,4 +1,5 @@
-import { renderProfile } from "./renderProfilecard.js"
+import renderProfile from "./renderProfilecard.js"
+
 
 console.log('beans')
 

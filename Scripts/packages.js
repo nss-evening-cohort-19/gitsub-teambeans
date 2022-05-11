@@ -1,6 +1,6 @@
-import { renderToDom } from "./renderToDom";
+import renderToDom from "./renderToDom";
 
-const packageList = [
+export const packageList = [
     {
         id: 1,
         title: "Docker",
@@ -25,3 +25,9 @@ export const packageCards = () => {
     }
     renderToDom('#packageBoi', domString)
 }
+
+const startApp = () => {
+    packageCards(packageList)
+  };
+  
+  startApp();
