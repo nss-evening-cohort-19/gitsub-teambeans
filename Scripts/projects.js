@@ -1,26 +1,24 @@
 import renderToDom from "./renderToDom.js";
-import { projectData } from "./fakedata";
+import { projectData } from "./fakedata.js";
 
-console.log(projectData);
+//change this to forEach loop
+const renderProjectsList = () => {
+  let domString = "";
+  domString = `<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">"${projectData.name}"</h5>
+    <small class="text-muted">"${projectData.updateTime}"</small>
+  </div>
+  <p class="mb-1">"${projectData.description}"</p>
+  <small class="text-muted">"${
+    projectData.private ? "private" : "public"
+  }"</small>
+</a>
+</div>`;
 
-
-// const renderProjectsList = () => {
-//   let domString = "";
-//   domString = `<div class="list-group">
-//   <a href="#" class="list-group-item list-group-item-action">
-//   <div class="d-flex w-100 justify-content-between">
-//     <h5 class="mb-1">"${projectData.name}"</h5>
-//     <small class="text-muted">"${projectData.updateTime}"</small>
-//   </div>
-//   <p class="mb-1">"${projectData.description}"</p>
-//   <small class="text-muted">"${
-//     projectData.private ? "private" : "public"
-//   }"</small>
-// </a>
-// </div>`;
-
-//   renderToDom("#mainContent", domString);
-// };
+  renderToDom("#mainContent", domString);
+};
 
 // //function is not added to main.js
 
@@ -42,4 +40,4 @@ console.log(projectData);
 //   renderToDom("#formContent", domString);
 // };
 
-// export default { renderProjectsList };
+export { renderProjectsList };

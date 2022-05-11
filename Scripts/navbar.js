@@ -1,5 +1,5 @@
 import renderToDom from "./renderToDom.js";
-// import { renderProjectsList } from "./projects";
+import { renderProjectsList } from "./projects.js";
 
 const displayNavBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -9,17 +9,17 @@ const displayNavBar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item" id="overviewLink">
-              <a class="nav-link active" aria-current="page" href="#">Overview</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="overviewLink">Overview</a>
             </li>
-            <li class="nav-item" id="repositoriesLink">
-              <a class="nav-link" href="#"> Repositories</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="repositoriesLink"> Repositories</a>
             </li>
-            <li class="nav-item" id="projectsLink">
-              <a class="nav-link" href="#">Projects</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="projectsLink">Projects</a>
             </li>
-            <li class="nav-item" id="packagesLink">
-              <a class="nav-link" href="#">Packages</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  id="packagesLink">Packages</a>
             </li>
           </ul>
         </div>
@@ -30,7 +30,7 @@ const displayNavBar = () => {
 };
 
 const handleNavBarLinksClick = () => {
-  document.getElementById().addEventListener("click", (event) => {
+  document.getElementById("navbarNav").addEventListener("click", (event) => {
     const linkId = event.target.id;
 
     switch (linkId) {
@@ -45,6 +45,7 @@ const handleNavBarLinksClick = () => {
       case "projectsLink":
         // ToDo: add function to show projects section
         console.log("projects link clicked");
+        renderProjectsList();
         break;
       case "packagesLink":
         // ToDo: add function to show packages section
@@ -54,4 +55,4 @@ const handleNavBarLinksClick = () => {
   });
 };
 
-export default { displayNavBar, handleNavBarLinksClick };
+export { displayNavBar, handleNavBarLinksClick };
