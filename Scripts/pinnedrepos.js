@@ -1,9 +1,9 @@
 import renderToDom from "./renderToDom.js";
+import {fakeRepos} from "./fakedata.js";
 
 const pinnedRepos = (array) => {
-  let domString = ``;
-  for (const member of array) {
-
+  let domString = '';
+  for (const item of array) {
     domString += `
     <div class="card" style="width: 85rem;">
   <div class="card-body">
@@ -18,6 +18,6 @@ const pinnedRepos = (array) => {
 </div>
     `
   }
-  renderToDom('#', domString)
-}
+  renderToDom('#mainContent', domString);
+};
 export default pinnedRepos;
