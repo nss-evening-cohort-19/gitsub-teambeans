@@ -1,3 +1,8 @@
+const renderToDom = (divId, textToRender) => {
+    const selectedDiv = document.querySelector(divId);
+    selectedDiv.innerHTML = textToRender;
+  };
+
 const footerLine = () => {
     let domString = `<footer><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="footer-container">
@@ -26,3 +31,6 @@ const footerLine = () => {
   </nav></footer>`;
     renderToDom("#footerContainer", domString);
   };
+
+  
+  footerLine();
