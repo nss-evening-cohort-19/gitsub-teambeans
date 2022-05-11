@@ -29,7 +29,7 @@ const footerLine = () => {
       </div>
     </div>
   </nav></footer>`;
-    renderToDom("#footerContainer", domString);
+    renderToDom("#footer", domString);
   };
 
   
