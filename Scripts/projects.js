@@ -1,7 +1,7 @@
 import renderToDom from "./renderToDom.js";
 import { projectData } from "./fakedata.js";
 
-//change this to forEach loop
+
 const renderProjectsList = () => {
   let domString = "";
   for (const project of projectData) {
