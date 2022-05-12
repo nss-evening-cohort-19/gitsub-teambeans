@@ -1,5 +1,5 @@
 import renderToDom from "./renderToDom.js";
-import { renderProjectsList } from "./projects.js";
+import { renderProjectsList, displayAddNewProjectForm } from "./projects.js";
 
 const displayNavBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,6 +46,7 @@ const handleNavBarLinksClick = () => {
         // ToDo: add function to show projects section
         console.log("projects link clicked");
         renderProjectsList();
+        displayAddNewProjectForm();
         break;
       case "packagesLink":
         // ToDo: add function to show packages section
