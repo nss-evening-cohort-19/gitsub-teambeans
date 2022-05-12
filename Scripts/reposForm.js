@@ -5,19 +5,18 @@ const renderRepoForm = () => {
   let domString =
   `<h1>Create a new Repository</h1>
   <form id="form">
-    <div class="input-group mb-3">
-    <span class="input-group-text" id="title">Title</span>
-   <input type="text" class="form-control" aria-label="title" aria-describedby="inputGroup-sizing-default">
-   </div>
-   <div class="input-group mb-3">
-   <span class="input-group-text" id="description">Description</span>
-   <input type="text" class="form-control" aria-label="description" aria-describedby="inputGroup-sizing-default">
-   </div>
-   </div>
-   <div class="input-group mb-3">
-   <span class="input-group-text" id="codetype">Code type</span>
-   <input type="text" class="form-control" aria-label="codetype" aria-describedby="inputGroup-sizing-default">
-   </div>
+  <div class="mb-3">
+       <label for="title" class="form-label">Title</label>
+        <input type="text" placeholder="Title" class="form-control" id="title" aria-describedby="title" required>
+     </div>
+     <div class="mb-3">
+       <label for="description" class="form-label">Description</label>
+        <input type="text" placeholder="description" class="form-control" id="description" aria-describedby="description" required>
+     </div>
+     <div class="mb-3">
+       <label for="codeType" class="form-label">Codetype</label>
+        <input type="text" placeholder="codetype" class="form-control" id="codetype" aria-describedby="codetype" required>
+     </div>
    <button type="submit" class="btn btn-primary">Create Repo</button>
   </form>`;
 

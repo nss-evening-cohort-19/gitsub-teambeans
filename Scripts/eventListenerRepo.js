@@ -9,10 +9,10 @@ const eventListenerRepo = () =>{
   const cardId =fakeRepos.map(repo => repo.id).sort((a, b) => a - b);
   const repoId =cardId.length ? cardId[cardId.length - 1] + 1 : 1;
   const repoObj = {
+    id: repoId,
     title: document.querySelector("#title").value,
     description: document.querySelector("#description").value,
     codetype: document.querySelector("#codetype").value,
-    id: repoId,
   };
   fakeRepos.push(repoObj);
   repos(fakeRepos);
