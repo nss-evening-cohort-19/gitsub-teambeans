@@ -1,7 +1,7 @@
 import renderToDom from "./renderToDom.js";
 import {fakeRepos} from "./fakedata.js";
 
-const pinnedRepos = (array) => {
+const repos = (array) => {
   let domString = '';
   for (const item of array) {
     domString += `
@@ -20,4 +20,4 @@ const pinnedRepos = (array) => {
   }
   renderToDom('#mainContent', domString);
 };
-export default pinnedRepos;
+export default repos;
