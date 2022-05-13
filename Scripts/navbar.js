@@ -30,4 +30,4 @@ const displayNavBar = () => {
   setInnerHtml("navBar", domString);
 };
 
-displayNavBar();
+export default displayNavBar;
