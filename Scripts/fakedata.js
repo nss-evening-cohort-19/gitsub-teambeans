@@ -25,6 +25,4 @@ let fakeRepos = [
   }
 ];
 
-
-
-export default fakeRepos;
+export {fakeRepos};

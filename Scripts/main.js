@@ -1,25 +1,20 @@
 console.log('beans')
-<<<<<<< HEAD
-import repos from "./renderRepos.js";
-=======
+import displayNavBar from "./navbar.js";
 import renderPin from "./Overview.js";
->>>>>>> main
 import renderProfile from "./renderProfilecard.js"
-<<<<<<< HEAD
-impoe
-=======
 import {fakeRepos} from "./fakedata.js";
-import renderRepoForm from "./reposForm.js"
+import renderRepoForm from "./reposForm.js";
 import eventListenerRepo from "./eventListenerRepo.js";
->>>>>>> main
+import footerLine from "./footer.js";
+import repos from "./renderRepos.js";
 const startApp = () => {
   displayNavBar();
-  renderProfile();
+ renderProfile();
   repos(fakeRepos);
   renderRepoForm();
   console.log(fakeRepos);
   eventListenerRepo();
-  
+  footerLine();
 };
 
 startApp();
