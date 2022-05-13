@@ -1,5 +1,5 @@
 import renderToDom from "./renderToDom";
-import { displayNavBar } from "./navbar";
+
 
 export const packageList = [
     {
@@ -8,7 +8,29 @@ export const packageList = [
         content: "A software platform used for building aplications based on containers"
     }
 ]
+const search = (event) => {
+  console.log(event)
+  const userInput = event.target.value.toLowerCase();
+  const searchBar = packageList.filter(packa => 
+    packa.title.toLowerCase().includes(userInput) || 
+     packa.content.toLowerCase().includes(userInput) 
+    
+  )
+  renderCards(searchBar)
+}
 
+const addPack = () => {
+  let domString = `<form><div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  </form>`
+  renderToDom("#formContainer", domString)
+}
 
 
 export const packageCards = () => {
@@ -24,11 +46,43 @@ export const packageCards = () => {
         </div>
       </div>`
     }
-    renderToDom('#packageBoi', domString)
+    renderToDom('#mainContent', domString)
+}
+const eventListeners = () => {
+  document.querySelector('#mainContent').addEventListener('click', (e) => {
+    if (e.target.id) {
+      const [method, pack] = e.target.id.split("--")
+  
+      const index = packageList.findIndex(p => p.id === parseInt(id))
+  
+      if (e.target.id.includes('delete')) {
+        console.log('deleted')
+        packageList.splice(index, 1)
+        packageCards(packageList)
+      }
+    }
+  })
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const newPackage = {
+      id:Math.floor(Math.random() * 10)+5,
+      title: document.querySelector("#package-title").value,
+      content: document.querySelector('#package-content').value
+    }
+    console.log(newPackage)
+    packageList.push(newPackage);
+    packageCards(packageList)
+    form.reset();
+  })
+
+
 }
 
+
+
 const startApp = () => {
-    displayNavBar();
+    document.querySelector('searchInput').addEventListener('keyup', search)
     packageCards(packageList);
   };
   

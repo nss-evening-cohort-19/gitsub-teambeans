@@ -1,9 +1,7 @@
-import renderToDom from "./renderToDom";
+const setInnerHtml = (id, htmlString) =>
+  (document.getElementById(id).innerHTML = htmlString);
 
-// const setInnerHtml = (id, htmlString) =>
-//   (document.getElementById(id).innerHTML = htmlString);
-
-export const displayNavBar = () => {
+const displayNavBar = () => {
   let domString = "";
   domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -29,7 +27,7 @@ export const displayNavBar = () => {
   </div>
 </nav>`;
 
-  renderToDom("#navBar", domString);
+  setInnerHtml("navBar", domString);
 };
 
 displayNavBar();
