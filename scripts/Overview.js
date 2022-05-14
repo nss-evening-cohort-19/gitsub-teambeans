@@ -3,10 +3,8 @@ import fakeRepos from './fakedata.js';
 
 
 //pin module
-const renderPin = (array) => {
+const renderPin = () => {
   let domString = "";
-  for (const repo of array) {
-
     domString += 
     `<!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -38,14 +36,14 @@ const renderPin = (array) => {
     </div>
     </div>
     </div>`;
-  }
-  renderToDom("#pinContainer", domString);
-  
+    renderToDom("#pinContainer", domString);
 };
+  
 
 
 
-renderPin(fakeRepos);
+
+export default renderPin;
 
 
 
