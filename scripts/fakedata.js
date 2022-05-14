@@ -1,24 +1,24 @@
 let fakeRepos = [
   {
-    repoId: 1,
+    id: 1,
     title: 'deathray',
     description: 'codes for a deathray shaped like a top hat',
     codetype: 'Javascript',
   },
   {
-    repoId: 2,
+    id: 2,
     title: 'beancounter',
     description: 'An app that counts all sorts of beans',
     codetype: 'Javascript',
   },
   {
-    repoId: 3,
+    id: 3,
     title: 'Instrumentality',
     description: 'breaking the seals of reality as we know it',
     codetype: 'Javascript',
   },
   {
-    repoId: 4,
+    id: 4,
     title: 'food',
     description: 'This app will tell you if a food item is a hotdog, or not-hotdog',
     codetype: 'Javascript',
@@ -64,4 +64,3 @@ const projectData = [
 ];
 
 export { fakeRepos, projectData };
-
