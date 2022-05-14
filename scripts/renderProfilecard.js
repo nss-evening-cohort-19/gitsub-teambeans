@@ -27,4 +27,5 @@ const renderProfile = () => {
 </div>`;
 renderToDom ("#profileContainer", domString);
 };
+
 export default renderProfile;
