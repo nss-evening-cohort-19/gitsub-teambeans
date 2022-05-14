@@ -2,3 +2,17 @@
     position: fixed;
     bottom: 0;
 }
+
+#overviewContainer {
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: left;
+    display: flex;
+}
+
+.card {
+    width: 350px;
+    margin: 1.5em;
+    padding: auto;
+
+}
