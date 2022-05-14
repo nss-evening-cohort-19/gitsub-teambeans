@@ -50,13 +50,3 @@ const renderPin = (array) => {
 };
 
 renderPin(fakeRepos);
-
-
-
-
-
-
-
-
-
-
