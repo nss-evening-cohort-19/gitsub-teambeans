@@ -21,13 +21,14 @@ const search = (event) => {
 
 const addPack = () => {
   let domString = `<form><div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label for="addPackage" class="form-label">Title</label>
+    <input type="email" class="form-control" id="addTitle" placeholder="name@example.com">
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="addContent" class="form-label">Type something...</label>
+    <textarea class="form-control" id="addContent" rows="3"></textarea>
   </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
   </form>`
   renderToDom("#formContainer", domString)
 }
@@ -83,6 +84,8 @@ const eventListeners = () => {
 
 const startApp = () => {
     document.querySelector('searchInput').addEventListener('keyup', search)
+    addPack()
+    eventListeners()
     packageCards(packageList);
   };
   
