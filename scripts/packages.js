@@ -59,19 +59,18 @@ export const packageCards = (packageList) => {
     }
     renderToDom('#mainContent', domString)
 }
- export const packEventListeners = () => {
+
+export const packEventListeners = () => {
   document.querySelector('#mainContent').addEventListener('click', (e) => {
-    if (e.target.id) {
-      const [method, pack] = e.target.id.split("--")
-      console.log(pack.id)
-      const index = packageList.findIndex(pack => pack.id === pack.id)
-  
+    const [method, id] = e.target.id.split('--')
+    const index = packageList.findIndex(p => p.id === parseInt(id))
+
       if (e.target.id.includes('delete')) {
         console.log('deleted')
         packageList.splice(index, 1)
         packageCards(packageList)
       }
-    }
+    
   })
 
 

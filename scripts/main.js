@@ -29,7 +29,7 @@ const startApp = () => {
   handleNavBarLinksClick();
   // repos(fakeRepos);
   // renderRepoForm();
-  packEventListeners()
+  // packEventListeners()
   eventListenerRepo();
 };
 
