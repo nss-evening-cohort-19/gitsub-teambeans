@@ -4,7 +4,7 @@ import { projectData } from "./fakedata.js";
 const renderProjectsList = (projectsArray) => {
 
   let domString = 
-    `<div style="display: flex; flex-direction: row;align-items: center;"><i class="fa fa-search"></i><input class="form-control mr-sm-2" type="search" placeholder="Search all projects" aria-label="Search"></div>
+    `<div style="display: flex; flex-direction: row;align-items: center;"><i class="fa fa-search"></i><input class="form-control mr-sm-2 id="searchFeature" type="search" placeholder="Search all projects" aria-label="Search"></div>
     `;
 
   const projectsToRender =
