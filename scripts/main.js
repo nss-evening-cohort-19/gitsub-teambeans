@@ -12,10 +12,9 @@ const startApp = () => {
   renderProfile();
   displayNavBar();
   handleNavBarLinksClick();
-  repos(fakeRepos);
-  renderRepoForm();
-  console.log(fakeRepos); //ToDo: only for testing, please remove:
-  eventListenerRepo();
+//  repos(fakeRepos);
+  //renderRepoForm();
+ // console.log(fakeRepos); //ToDo: only for testing, please remove:
 };
 
 startApp();
