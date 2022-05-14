@@ -1,10 +1,11 @@
 import renderToDom from './renderToDom.js';
-import fakeRepos from './fakedata.js';
+import {fakeRepos} from './fakedata.js';
 
 
 //pin module
 const renderPin = (array) => {
   let domString = "";
+  console.log(array)
   for (const repo of array) {
 
     domString += 
@@ -45,7 +46,7 @@ const renderPin = (array) => {
     </div>
     </div>`;
   }
-  renderToDom("#pinContainer", domString);
+  renderToDom("#mainContent", domString);
   
 };
 

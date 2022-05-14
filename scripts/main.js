@@ -1,19 +1,15 @@
 import { search } from "./packages.js";
 import renderProfile from "./renderProfilecard.js"
-import { packageList } from "./packages.js";
-import { packageCards } from "./packages.js";
-import { addPack } from "./packages.js";
-import { packEventListeners } from "./packages.js";
+import { packageList,packageCards, addPack, packEventListeners } from "./packages.js";
 
 
 
 
 
+// import fakeRepos from "./fakedata.js";
 
-import fakeRepos from "./fakedata.js";
 
-
-import repos from "./renderRepos.js";
+// import repos from "./renderRepos.js";
 // import renderPin from "./Overview.js";
 
 
@@ -27,13 +23,13 @@ const startApp = () => {
   
   packageCards(packageList)
   addPack()
-  packEventListeners()
+  
   renderProfile();
   displayNavBar();
   handleNavBarLinksClick();
-  repos(fakeRepos);
-  renderRepoForm();
-  
+  // repos(fakeRepos);
+  // renderRepoForm();
+  packEventListeners()
   eventListenerRepo();
 };
 

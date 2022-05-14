@@ -63,6 +63,6 @@ const projectData = [
   },
 ];
 
-export default { fakeRepos, projectData };
+export { fakeRepos, projectData };
 
 

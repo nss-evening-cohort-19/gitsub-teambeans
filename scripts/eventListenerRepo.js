@@ -1,4 +1,4 @@
-import fakeRepos from "./fakedata.js"
+import {fakeRepos} from "./fakedata.js"
 import renderRepoForm from "./reposForm.js"
 import repos from "./renderRepos.js";
 

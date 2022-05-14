@@ -6,6 +6,16 @@ export const packageList = [
         id: 1,
         title: "Docker",
         content: "A software platform used for building aplications based on containers"
+    },
+    {
+      id: 2,
+      title: "Apache Maven",
+      content: "A default package manager used for the Java programming language and the Java runtime environment."
+    },
+    {
+      id: 3,
+      title: "NuGet",
+      content: "A free and open source package manager used for the Microsoft development platforms including .NET."
     }
 ]
 export const search = (event) => {
@@ -22,7 +32,7 @@ export const search = (event) => {
 export const addPack = () => {
   let domString = `<form><div class="mb-3">
     <label for="addPackage" class="form-label">Title</label>
-    <input type="email" class="form-control" id="addTitle" placeholder="name@example.com">
+    <input type="text" class="form-control" id="addTitle" placeholder="name@example.com">
   </div>
   <div class="mb-3">
     <label for="addContent" class="form-label">Type something...</label>
@@ -30,13 +40,13 @@ export const addPack = () => {
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
   </form>`
-  renderToDom("#formContainer", domString)
+  renderToDom("#formContent", domString)
 }
 
 
-export const packageCards = () => {
-    const domString = '';
-    for (pack of packageList) {
+export const packageCards = (packageList) => {
+    let domString = "";
+    for (let pack of packageList) {
         domString += `<div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
@@ -53,8 +63,8 @@ export const packageCards = () => {
   document.querySelector('#mainContent').addEventListener('click', (e) => {
     if (e.target.id) {
       const [method, pack] = e.target.id.split("--")
-  
-      const index = packageList.findIndex(p => p.id === parseInt(id))
+      console.log(pack.id)
+      const index = packageList.findIndex(pack => pack.id === pack.id)
   
       if (e.target.id.includes('delete')) {
         console.log('deleted')
@@ -64,12 +74,13 @@ export const packageCards = () => {
     }
   })
 
+
+  const form = document.querySelector('form')
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const newPackage = {
-      id:Math.floor(Math.random() * 10)+5,
-      title: document.querySelector("#package-title").value,
-      content: document.querySelector('#package-content').value
+      title: document.querySelector("#addTitle").value,
+      content: document.querySelector('#addContent').value
     }
     console.log(newPackage)
     packageList.push(newPackage);

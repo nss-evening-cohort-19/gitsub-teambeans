@@ -1,5 +1,5 @@
 import renderToDom from "./renderToDom.js";
-import fakeRepos from "./fakedata.js";
+// import fakeRepos from "./fakedata.js";
 
 const repos = (array) => {
   let domString = '';
