@@ -1,3 +1,8 @@
+import renderToDom from "./renderToDom.js";
+import fakeRepos from "./fakedata.js";
+
+
+
 //card
 const overviewDom = (array) => {
     let domString = "";
@@ -13,3 +18,5 @@ const overviewDom = (array) => {
     }
     renderToDom("#overviewContainer", domString);
   };
+
+  export default overviewDom;
