@@ -1,4 +1,4 @@
-import { fakeRepos } from "./fakedata.js";
+import fakeRepos from "./fakedata.js";
 import renderToDom from "./renderToDom.js";
 
 const renderRepoForm = () => {

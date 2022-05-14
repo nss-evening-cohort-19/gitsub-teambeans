@@ -1,4 +1,4 @@
-import renderToDom from "./renderToDom";
+import renderToDom from "./renderToDom.js";
 
 
 export const packageList = [
