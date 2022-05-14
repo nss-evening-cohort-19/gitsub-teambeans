@@ -82,11 +82,11 @@ const eventListeners = () => {
 
 
 
-const startApp = () => {
+const packApp = () => {
     document.querySelector('searchInput').addEventListener('keyup', search)
     addPack()
     eventListeners()
     packageCards(packageList);
   };
   
-  startApp();
+  packApp();

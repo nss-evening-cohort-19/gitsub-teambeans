@@ -2,10 +2,7 @@
 import renderProfile from "./renderProfilecard.js"
 
 
-console.log('beans')
 
-
-console.log('beans')
 
 import repos from "./renderRepos.js";
 
