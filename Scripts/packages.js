@@ -8,7 +8,7 @@ export const packageList = [
         content: "A software platform used for building aplications based on containers"
     }
 ]
-const search = (event) => {
+export const search = (event) => {
   console.log(event)
   const userInput = event.target.value.toLowerCase();
   const searchBar = packageList.filter(packa => 
@@ -19,7 +19,7 @@ const search = (event) => {
   renderCards(searchBar)
 }
 
-const addPack = () => {
+export const addPack = () => {
   let domString = `<form><div class="mb-3">
     <label for="addPackage" class="form-label">Title</label>
     <input type="email" class="form-control" id="addTitle" placeholder="name@example.com">
@@ -49,7 +49,7 @@ export const packageCards = () => {
     }
     renderToDom('#mainContent', domString)
 }
-const eventListeners = () => {
+ export const packEventListeners = () => {
   document.querySelector('#mainContent').addEventListener('click', (e) => {
     if (e.target.id) {
       const [method, pack] = e.target.id.split("--")
@@ -82,11 +82,3 @@ const eventListeners = () => {
 
 
 
-const packApp = () => {
-    document.querySelector('searchInput').addEventListener('keyup', search)
-    addPack()
-    eventListeners()
-    packageCards(packageList);
-  };
-  
-  packApp();
