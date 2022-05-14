@@ -16,3 +16,23 @@
     padding: auto;
 
 }
+
+#addedProjects{
+    border: 5px;
+    border-color:white;
+    padding: 10px 20px;
+}
+
+#projectFormContainer{
+    border: 5px;
+    border-color:white;
+    padding: 10px 20px;
+}
+
+.container-fluid{
+padding-bottom: 10px;
+}
+
+#searchFeature{
+    padding-top: 15px;
+}
