@@ -1,6 +1,7 @@
 #footer {
     justify-content: space-evenly;
     bottom: 0;
+    position: relative;
 }
 
 

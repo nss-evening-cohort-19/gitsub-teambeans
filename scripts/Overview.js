@@ -124,7 +124,7 @@ const clickCheck = () => {
 };
 
 const clearCheck = () => {
-  let countMessage = document.querySelector("#maxMessage");
+  let countMessage = document.querySelector("#message");
   const checkboxes = document.getElementsByName("checkbox");
   const limit = 4;
   for (let i = 0; i < checkboxes.length; i++) {
