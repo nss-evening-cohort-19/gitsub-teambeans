@@ -38,7 +38,7 @@ const renderPin = () => {
     </div>
     </div>
     </div>`;
-    renderToDom("#pinContainer", domString);
+    renderToDom("#formContent", domString);
 };
  
 //card
