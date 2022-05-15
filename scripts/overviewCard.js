@@ -13,3 +13,4 @@ const overviewDom = (array) => {
     }
     renderToDom("#overviewContainer", domString);
   };
+  export default overviewDom;

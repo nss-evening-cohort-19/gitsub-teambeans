@@ -1,5 +1,5 @@
 import renderToDom from './renderToDom.js';
-import fakeRepos from './fakedata.js';
+import {fakeRepos} from './fakedata.js';
 
 
 //pin module
@@ -49,4 +49,8 @@ const renderPin = (array) => {
   
 };
 
+<<<<<<< HEAD:scripts/overview.js
 renderPin(fakeRepos);
+=======
+export default renderPin;
+>>>>>>> main:scripts/Overview.js
