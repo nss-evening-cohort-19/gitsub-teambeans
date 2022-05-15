@@ -37,8 +37,8 @@ const handleNavBarLinksClick = () => {
 
     switch (linkId) {
       case "overviewLink":
-        renderPin();
-        pinnedCard();
+        renderPin(fakeRepos);
+        pinnedCard(fakerepos);
         // ToDo: add function to show overview section
         console.log("overview link clicked");
         break;

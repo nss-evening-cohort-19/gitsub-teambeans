@@ -15,10 +15,6 @@ const startApp = () => {
   renderPin(fakeRepos);
   pinnedCard(fakeRepos);
   handleNavBarLinksClick();
-  repos(fakeRepos);
-  renderRepoForm();
-  console.log(fakeRepos); //ToDo: only for testing, please remove:
-  eventListenerRepo();
 };
 
 startApp();
