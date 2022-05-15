@@ -31,6 +31,7 @@ const footerLine = () => {
   </nav></footer>`;
     renderToDom("#footer", domString);
   };
-footerLine();
+
+export { footerLine };
   
 

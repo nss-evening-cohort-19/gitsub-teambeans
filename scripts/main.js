@@ -5,6 +5,7 @@ import {fakeRepos} from "./fakedata.js";
 import renderRepoForm from "./reposForm.js";
 import eventListenerRepo from "./eventListenerRepo.js";
 import { displayNavBar, handleNavBarLinksClick } from "./navbar.js";
+import { footerLine } from "./footer.js"
 
 
 console.log('beans')
