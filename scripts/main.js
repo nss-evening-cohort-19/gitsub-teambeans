@@ -6,6 +6,7 @@ import renderRepoForm from "./reposForm.js";
 import eventListenerRepo from "./eventListenerRepo.js";
 import { displayNavBar, handleNavBarLinksClick } from "./navbar.js";
 import {displayAddNewProjectForm} from "./projects.js"
+import footerLine from "./footer.js";
 
 console.log('beans')
 
@@ -16,6 +17,7 @@ const startApp = () => {
   pinnedCard(fakeRepos);
   handleNavBarLinksClick();
   displayAddNewProjectForm();
+  footerLine();
 };
 
 startApp();
