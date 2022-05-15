@@ -124,7 +124,7 @@ const clickCheck = () => {
 };
 
 const clearCheck = () => {
-  let countMessage = document.querySelector("#message");
+  let countMessage = document.querySelector("#maxMessage");
   const checkboxes = document.getElementsByName("checkbox");
   const limit = 4;
   for (let i = 0; i < checkboxes.length; i++) {
@@ -153,14 +153,3 @@ setTimeout(() => {
 
 
 export { renderPin, pinnedCard, pinEventListener }  
-
-
-
-
-
-
-
-
-
-
-

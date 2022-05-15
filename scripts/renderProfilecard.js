@@ -3,7 +3,7 @@ import renderToDom from "./renderToDom.js"
 const renderProfile = () => {
   let domString = `
   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbr_WseELEGZ5O20EsC4Nl_shDIRG7jH6WQZwq8dz7NHsbSQO2ZDg9uIUetQtrKm0rneA&usqp=CAU" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Jon Doe</h5>
     <p>J-Doe47</p>

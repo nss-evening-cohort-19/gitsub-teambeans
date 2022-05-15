@@ -1,7 +1,8 @@
 import renderToDom from "./renderToDom.js";
 import { renderProjectsList, displayAddNewProjectForm } from "./projects.js";
-import { pinnedCard, renderPin } from "./Overview.js";
-import fakeRepos from "./fakedata.js";
+import repos from "./renderRepos.js";
+import { fakeRepos } from "./fakedata.js";
+import renderRepoForm from "./reposForm.js";
 
 const displayNavBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,6 +45,8 @@ const handleNavBarLinksClick = () => {
         break;
       case "repositoriesLink":
         // ToDo: add function to show repositories section
+        repos(fakeRepos);
+        renderRepoForm();
         console.log("repositories link clicked");
         break;
       case "projectsLink":
