@@ -31,7 +31,7 @@ const renderPin = () => {
     </ul>
     </div>
     <div class="modal-footer">
-    <div id="maxMessage" class="maxMessage"></div>
+    <div id="message" class="message"></div>
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
     <button id="savePinned-btn" type="button" class="btn btn-primary">Save pins</button>
     </div>
@@ -55,7 +55,7 @@ const pinnedCard = (array) => {
     </div>
     </div>`;
   }
-  renderToDom('#overviewContainer', domString);
+  renderToDom('#mainContent', domString);
 };
 
 //event listener
@@ -91,8 +91,8 @@ const pinEventListener = () => {
   });
 };
 
-const limitChecks = () => {
-  let countMessage = document.querySelector("#maxMessage");
+const clickCheck = () => {
+  let countMessage = document.querySelector("#message");
   const checkboxes = document.getElementsByName("checkbox");
   const limit = 4;
   countMessage.innerHTML = "";
@@ -138,7 +138,7 @@ const clearCheck = () => {
         let checked = document.querySelectorAll(".checkboxes");
         for (const item of checked) {
           item.removeAttribute("disabled");
-          limitChecks();
+          clickCheck();
         }
       }
     };

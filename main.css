@@ -1,13 +1,11 @@
 #footer {
     justify-content: space-evenly;
-    position: fixed;
     bottom: 0;
-
 }
 
 
 
-#overviewContainer {
+#mainContent {
     justify-content: center;
     flex-flow: row wrap;
     text-align: left;
@@ -24,3 +22,4 @@
 #pinContainer {
     display: flex;
 }
+
