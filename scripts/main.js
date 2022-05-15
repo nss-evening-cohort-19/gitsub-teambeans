@@ -16,7 +16,6 @@ const startApp = () => {
   renderPin(fakeRepos);
   pinnedCard(fakeRepos);
   handleNavBarLinksClick();
-  displayAddNewProjectForm();
   footerLine();
 };
 

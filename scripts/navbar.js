@@ -41,7 +41,6 @@ const handleNavBarLinksClick = () => {
       case "overviewLink":
         renderPin(fakeRepos);
         pinnedCard(fakeRepos);
-        displayAddNewProjectForm();
         // ToDo: add function to show overview section
         console.log("overview link clicked");
         break;
