@@ -3,6 +3,7 @@ import { renderProjectsList, displayAddNewProjectForm } from "./projects.js";
 import repos from "./renderRepos.js";
 import { fakeRepos } from "./fakedata.js";
 import renderRepoForm from "./reposForm.js";
+import {renderPin, pinnedCard} from "./Overview.js"
 
 const displayNavBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,7 +40,8 @@ const handleNavBarLinksClick = () => {
     switch (linkId) {
       case "overviewLink":
         renderPin(fakeRepos);
-        pinnedCard(fakerepos);
+        pinnedCard(fakeRepos);
+        displayAddNewProjectForm();
         // ToDo: add function to show overview section
         console.log("overview link clicked");
         break;
