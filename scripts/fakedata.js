@@ -4,24 +4,28 @@ let fakeRepos = [
     title: 'deathray',
     description: 'codes for a deathray shaped like a top hat',
     codetype: 'Javascript',
+    pinned: 'true',
   },
   {
     id: 2,
     title: 'beancounter',
     description: 'An app that counts all sorts of beans',
     codetype: 'Javascript',
+    pinned: 'true',
   },
   {
     id: 3,
     title: 'Instrumentality',
     description: 'breaking the seals of reality as we know it',
     codetype: 'Javascript',
+    pinned: 'true',
   },
   {
     id: 4,
     title: 'food',
     description: 'This app will tell you if a food item is a hotdog, or not-hotdog',
     codetype: 'Javascript',
+    pinned: 'false',
   }
 ];
 
@@ -62,5 +66,7 @@ const projectData = [
     private: false,
   },
 ];
+
+
 
 export { fakeRepos, projectData };

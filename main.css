@@ -1,9 +1,12 @@
 #footer {
-    position: fixed;
+    justify-content: space-evenly;
     bottom: 0;
+    position: relative;
 }
 
-#overviewContainer {
+
+
+#mainContent {
     justify-content: center;
     flex-flow: row wrap;
     text-align: left;
@@ -16,3 +19,8 @@
     padding: auto;
 
 }
+
+#pinContainer {
+    display: flex;
+}
+
