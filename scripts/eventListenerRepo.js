@@ -22,17 +22,6 @@ const eventListenerRepo = () =>{
 });
 
 
-  //save pin
-  const saveRepo = {
-    title: document.querySelector('#title').value,
-    codetype: document.querySelector('#codetype').value,
-    favorites: Math.floor(math.random()*84)
-  };
-
-  //pushing it to save pins
-  saveFavRepo.push(saveRepo);
-  
-
 
 
 
