@@ -1,6 +1,6 @@
 import renderToDom from "./renderToDom.js";
 import { renderProjectsList, displayAddNewProjectForm } from "./projects.js";
-import { addPack, packageCards, packageList, packEventListeners } from "./packages.js";
+import { addPack, packageCards, packageList, packEventListeners, search } from "./packages.js";
 
 const displayNavBar = () => {
   const domString = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
