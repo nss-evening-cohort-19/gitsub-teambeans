@@ -1,6 +1,6 @@
-import {fakeRepos} from "./fakedata.js";
+//import { fakeRepos } from "./fakedata.js";
 import renderToDom from "./renderToDom.js";
-
+import eventListenerRepo from "./eventListenerRepo.js";
 const renderRepoForm = () => {
   let domString =
   `<h1>Create a new Repository</h1>
@@ -21,5 +21,6 @@ const renderRepoForm = () => {
   </form>`;
 
   renderToDom ("#formContent", domString);
+  eventListenerRepo();
 }
 export default renderRepoForm;
