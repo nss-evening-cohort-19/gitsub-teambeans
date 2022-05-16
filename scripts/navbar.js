@@ -1,5 +1,6 @@
 import renderToDom from "./renderToDom.js";
 import { renderProjectsList, displayAddNewProjectForm } from "./projects.js";
+import { addPack, packageCards, packageList, packEventListeners, search } from "./packages.js";
 import repos from "./renderRepos.js";
 import { fakeRepos } from "./fakedata.js";
 import renderRepoForm from "./reposForm.js";
@@ -57,7 +58,9 @@ const handleNavBarLinksClick = () => {
         displayAddNewProjectForm();
         break;
       case "packagesLink":
-        // ToDo: add function to show packages section
+        addPack()
+        packageCards(packageList)
+        packEventListeners()
         console.log("packages link clicked");
         break;
     }

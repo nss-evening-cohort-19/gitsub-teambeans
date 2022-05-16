@@ -20,6 +20,10 @@
 
 }
 
+#formContent {
+    display: flex;
+    float: right;
+}
 #pinContainer {
     display: flex;
 }

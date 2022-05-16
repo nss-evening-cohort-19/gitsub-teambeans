@@ -1,5 +1,5 @@
 import renderToDom from "./renderToDom.js";
-import { projectData } from "./fakedata.js";
+import {projectData } from "./fakedata.js";
 
 
 const renderProjectsList = () => {
